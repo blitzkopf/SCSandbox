@@ -1,0 +1,12 @@
+<extension id="yngvi" version="1.0.0" esdk-version="2.0" rsbundle-class="yngvi.Res"
+           xmlns="http://jcp.org/jsr/198/extension-manifest">
+  <name>${EXTENSION_NAME}</name>
+  <owner>${EXTENSION_OWNER}</owner>
+  <trigger-hooks xmlns="http://xmlns.oracle.com/ide/extension">
+    <!-- TODO Declare triggering functionality provided by extension: yngvi -->
+    <triggers/>
+  </trigger-hooks>
+  <hooks>
+    <!-- TODO Declare functionality provided by extension: yngvi -->
+  </hooks>
+</extension>
