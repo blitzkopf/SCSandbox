@@ -7,10 +7,10 @@
    MODIFIED   (MM/DD/YY)
    bduff       08/28/07 - Initial revision.
 -->
-<extension id="com.yngvi.scsandbox.observenodes" version="11.1.2"
-           esdk-version="1.0" xmlns="http://jcp.org/jsr/198/extension-manifest">
-  <name>ESDK Sample - Open Nodes</name>
-  <owner>Oracle</owner>
+<extension id="com.yngvi.scsandbox.observenodes" version="0.1"
+           esdk-version="2.0" xmlns="http://jcp.org/jsr/198/extension-manifest">
+  <name>NodesObserver</name>
+  <owner>Yngvi</owner>
 
   <feature-member id="esdk-samples" xmlns="http://xmlns.oracle.com/ide/extension"/>
 

@@ -20,6 +20,7 @@ public class EditorTracker implements EditorListener {
         Context ct;
         Node nd;
         BasicEditorPane bep;
+        CodeEditor ce;
         LogManager lm = LogManager.getLogManager();
         lm.showLog();
         lm.getMsgPage().log("ping:"+editor.toString()+"\n" );
@@ -31,15 +32,22 @@ public class EditorTracker implements EditorListener {
         lm.getMsgPage().log("Node: "+nd.toString()+"\n");
         if(!nd.setReadOnly(true))
             lm.getMsgPage().log( "setReadOnly failed!\n" );
-        bep = ((CodeEditor) editor).getFocusedEditorPane();
-        bep.setEditable(true);
+        try {
+            ce = (CodeEditor)editor;
+            bep = ce.getFocusedEditorPane();
+        } catch (Exception e) {
+            lm.getMsgPage().log("Exception: "+e.toString()+"\n");
+        }
+        /*bep.setEditable(true);*/
         lm.getMsgPage().log( "I'm out of here!\n" );
         //editor.se
-    }
+        }
 
     @Override
     public void editorActivated(Editor editor) {
-        // TODO Implement this method
+        /*LogManager lm = LogManager.getLogManager();
+        lm.showLog();
+        lm.getMsgPage().log("Activated:"+editor.toString()+"\n" );  */
     }
 
     @Override

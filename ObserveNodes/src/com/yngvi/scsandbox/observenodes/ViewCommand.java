@@ -41,9 +41,7 @@ public final class ViewCommand extends Command {
         EditorManager.getEditorManager().addEditorListener(new EditorTracker());
         //NodeFactory.attach(new NodeObserver(),"oracle.dbtools.raptor.navigator.plsql.PlSqlNode" );
         
-
-        
-        lm.getMsgPage().log("Started Observing\n" );
+        lm.getMsgPage().log("Started Tracking2\n" );
         return OK;
     }
 

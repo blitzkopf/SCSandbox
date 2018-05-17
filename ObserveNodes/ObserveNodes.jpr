@@ -110,8 +110,9 @@
          <hash n="edtExtensionProfile">
             <hash n="archiveOptions">
                <value n="bundleManifestVersion" v="2.0.0"/>
+               <value n="bundleName" v="ObserveNodes"/>
                <value n="bundleSymbolicName" v="com.yngvi.scsandbox.observenodes"/>
-               <value n="bundleVersion" v="11.1.1"/>
+               <value n="bundleVersion" v="0.1.0"/>
                <value n="hasManifest" v="true"/>
             </hash>
             <hash n="dependencies">
@@ -161,7 +162,7 @@
                <list n="contributors"/>
                <hash n="rules"/>
             </hash>
-            <url n="jarURL" path="../../../../../oracle/Middleware/Oracle_Home/jdeveloper/jdev/extension/oracle.ide.extsamples.updatecenter.jar"/>
+            <url n="jarURL" path="../com.yngvi.scsandbox.nodeobserver.jar"/>
             <hash n="libraryDependencies">
                <list n="unselectedLibraries">
                   <string v="JDeveloper Runtime"/>
@@ -231,11 +232,11 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <url n="id" path="../../../AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/ESDK Extra.library"/>
+            <url n="id" path="../../../.jdeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/SQLDEV.library"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <url n="id" path="../../../AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/SQLDEV.library"/>
+            <url n="id" path="../../../.jdeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/ESDK.library"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -249,11 +250,15 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <url n="id" path="../../../AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/ESDK Extra.library"/>
+            <url n="id" path="../../../.jdeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/SQLDEV.library"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <url n="id" path="../../../AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/SQLDEV.library"/>
+            <url n="id" path="../../../.jdeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/ESDK.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Tester"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
