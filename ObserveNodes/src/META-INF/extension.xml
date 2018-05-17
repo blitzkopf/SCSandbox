@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- $Header: jdev/src/esdk-samples/sample/OpenNodes/src/META-INF/extension.xml /main/12 2012/03/28 11:37:32 svassile Exp $  -->
+
+<!--
+ Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved. 
+
+   MODIFIED   (MM/DD/YY)
+   bduff       08/28/07 - Initial revision.
+-->
+<extension id="com.yngvi.scsandbox.observenodes" version="11.1.2"
+           esdk-version="1.0" xmlns="http://jcp.org/jsr/198/extension-manifest">
+  <name>ESDK Sample - Open Nodes</name>
+  <owner>Oracle</owner>
+
+  <feature-member id="esdk-samples" xmlns="http://xmlns.oracle.com/ide/extension"/>
+
+  <trigger-hooks xmlns="http://xmlns.oracle.com/ide/extension">
+    <triggers>
+      <dockable-factory-hook xmlns="http://xmlns.oracle.com/ide/extension">
+        <factory id="observeNodes" 
+                 class="com.yngvi.scsandbox.observenodes.OpenNodesDockableFactory"/>
+      </dockable-factory-hook>
+      <actions xmlns="http://xmlns.oracle.com/jdeveloper/1013/extension">
+        <action id="scsandbox.observeNodes">
+          <properties>
+            <property name="Name">Observe  Nodes</property>
+            <property name="SmallIcon">${OracleIcons.INDEX}</property>
+            <property name="LongDescription">Observe Nodes</property>
+          </properties>
+          <command-class>com.yngvi.scsandbox.observenodes.ViewCommand</command-class>
+        </action>
+      </actions>
+      
+     <controllers xmlns="http://xmlns.oracle.com/ide/extension">
+        <controller class="com.yngvi.scsandbox.observenodes.ViewController">
+          <update-rules>
+            <update-rule rule="always-enabled">
+              <action id="scsandbox.observeNodes">
+                <label>ESDK Sample : Open Nodes </label>
+              </action>
+            </update-rule>
+          </update-rules>
+        </controller>
+      </controllers>
+
+      <menu-hook xmlns="http://jcp.org/jsr/198/extension-manifest">
+        <!-- 
+          Add the action in its own separator group at the top of the File 
+          menu. 
+        -->
+        <menus>
+          <menubar id="javax.ide.view.MAIN_WINDOW_MENUBAR_ID">
+            <menu id="View">
+              <section id="esdksample.customsection" before="javax.ide.NEW_SECTION_ID">
+                <item action-ref="scsandbox.observeNodes"></item>
+              </section>
+            </menu>
+          </menubar>
+        </menus>
+       </menu-hook>
+      
+    </triggers>    
+  </trigger-hooks>
+  <hooks>
+    <!--- <feature-hook>
+      <part-of>oracle.ide.extsamples.allsamples</part-of>
+      <optional>true</optional>
+    </feature-hook> -->
+    <dockable-hook xmlns="http://xmlns.oracle.com/ide/extension">
+      <dockable id="observeNodes"/>
+    </dockable-hook>   
+  </hooks>
+</extension>
