@@ -19,7 +19,7 @@ public final class SearchAllController implements Controller {
         // TODO Implement this method
         LogManager lm = LogManager.getLogManager();
         lm.showLog();
-        lm.getMsgPage().log("TakkaBani");
+        lm.getMsgPage().log("Takka Bani");
         
         return true;
     }
