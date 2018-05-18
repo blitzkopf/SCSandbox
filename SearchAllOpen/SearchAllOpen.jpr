@@ -136,7 +136,10 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="../../../../../oracle/middleware/jdev122130/jdeveloper/jdev/extensions/yngvi.searchall.jar"/>
+            <hash n="importDefinition">
+               <hash n="rules"/>
+            </hash>
+            <url n="jarURL" protocol="file" path="/u01/app/oracle/middleware/jdev12213/jdeveloper/jdev/extensions/yngvi.searchall.jar"/>
             <value n="profileClass" v="oracle.jdevimpl.extensiondt.deploy.ExtensionProfile"/>
             <value n="profileName" v="edtExtensionProfile"/>
             <hash n="requireBundles">
@@ -172,5 +175,8 @@
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="ResourceBundleOptions">
+      <list n="RegisteredResourceBundles"/>
    </hash>
 </jpr:project>
