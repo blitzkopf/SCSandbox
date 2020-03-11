@@ -20,7 +20,6 @@ import oracle.ide.editor.EditorManager;
 import oracle.ide.extension.RegisteredByExtension;
 import oracle.ide.log.LogManager;
 import oracle.ide.model.NodeFactory;
-import oracle.ide.model.Node;
 
 /**
  * Command handler for esdksample.openNodeTracker.
@@ -39,7 +38,7 @@ public final class ViewCommand extends Command {
         lm.showLog();
         lm.getMsgPage().log("Hi!\n" );
         EditorManager.getEditorManager().addEditorListener(new EditorTracker());
-        //NodeFactory.attach(new NodeObserver(),"oracle.dbtools.raptor.navigator.plsql.PlSqlNode" );
+        NodeFactory.attach(new NodeObserver(),"oracle.dbtools.raptor.navigator.plsql.PlSqlNode" );
         
         lm.getMsgPage().log("Started Tracking2\n" );
         return OK;

@@ -173,6 +173,20 @@
          </list>
       </hash>
    </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <url n="id" path="../../../AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/ESDK Extra.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <list n="libraryReferences">
+         <hash>
+            <url n="id" path="../../../AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/ESDK Extra.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
    </hash>

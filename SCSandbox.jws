@@ -1,5 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
+   <hash n="adrs-workspace-properties">
+      <value n="adrs-instance-binding" v="DefaultServer"/>
+      <value n="deploy-timeout" v="0"/>
+      <value n="runtime-application-name" v="SCSandbox"/>
+   </hash>
    <value n="application-package-prefix" v="yngvi"/>
    <value n="appTemplateId" v="EDTAppTemplate"/>
    <hash n="component-versions">
@@ -26,7 +31,6 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="Extension/Extension.jpr"/></hash>
-      <hash><url n="URL" path="GuiTest/GuiTest.jpr"/></hash>
       <hash><url n="URL" path="ObserveNodes/ObserveNodes.jpr"/></hash>
       <hash><url n="URL" path="SearchAllOpen/SearchAllOpen.jpr"/></hash>
    </list>
@@ -35,9 +39,7 @@
          <value n="defaultExecuteRadioButtonSelected" v="true"/>
       </hash>
    </hash>
-   <hash n="oracle.jdeveloper.model.ApplicationLibraries">
-      <list n="libraryReferences"/>
-   </hash>
+   <hash n="oracle.jdeveloper.model.ApplicationLibraries"/>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="ApplicationSrcContentSet">
          <list n="pattern-filters">

@@ -12,32 +12,59 @@
             <property name="SmallIcon">${OracleIcons.LABEL}</property>
           </properties>
         </action>
+        <action id="yngvi.searchall.SearchAllWindowController">
+          <properties>
+            <property name="Name">Search All Open Documents</property>
+            <property name="SmallIcon">${OracleIcons.PROPERTIES}</property>
+            <property name="LongDescription">Search All Open Documents</property>
+          </properties>
+        </action>
       </actions>
       <controllers>
         <controller class="yngvi.searchall.SearchAllController">
           <update-rules>
             <update-rule rule="always-enabled">
-              <action id="yngvi.searchall.SearchAllAction">
+              <action id="yngvi.searchall.searchAllAction">
                 <label>Search All Open</label>
               </action>
+            </update-rule>
+          </update-rules>
+        </controller>
+        <controller class="yngvi.searchall.SearchAllWindowController">
+          <update-rules>
+            <update-rule rule="always-enabled">
+              <action id="yngvi.searchall.SearchAllWindowController"/>
             </update-rule>
           </update-rules>
         </controller>
       </controllers>
       <menu-hook xmlns="http://jcp.org/jsr/198/extension-manifest">
         <menus>
-          <menubar id="javax.ide.MAIN_WINDOW_MENUBAR_ID">
+          <menubar id="javax.ide.view.MAIN_WINDOW_MENUBAR_ID">
             <menu id="javax.ide.EDIT_MENU_ID">
               <section id="yngvi.searchallsection">
                 <item action-ref="yngvi.searchall.searchAllAction"/>
               </section>
             </menu>
           </menubar>
+          <menubar id="javax.ide.view.MAIN_WINDOW_MENUBAR_ID">
+            <menu id="Window">
+              <section id="menu-addin-section-id" weight="2.0">
+                <item action-ref="yngvi.searchall.SearchAllWindowController" weight="2.0"/>
+              </section>
+            </menu>
+          </menubar>
         </menus>
       </menu-hook>
+      <dockable-factory-hook>
+        <factory class="yngvi.searchall.SearchAllWindowFactory" id="SEARCHALLWINDOW_TYPE"/>
+      </dockable-factory-hook>
     </triggers>
   </trigger-hooks>
   <hooks>
     <!-- TODO Declare functionality provided by extension: yngvi.searchall -->
+    <dockable-hook xmlns="http://xmlns.oracle.com/ide/extension">
+      <dockable id="SEARCHALLWINDOW_TYPE"/>
+    </dockable-hook>
   </hooks>
 </extension>
